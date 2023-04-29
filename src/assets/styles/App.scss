@@ -1,5 +1,4 @@
-@import 'variables';
-@import "NavigationBar";
+@import "variables";
 
 .light {
   background-color: white;
@@ -16,20 +15,5 @@
 
   > * {
     color: white;
-  }
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 3vw;
-  height: 7rem;
-
-  h1 {
-    font-size: 4rem;
-    max-width: 100vw;
-    background-color: transparent !important;
   }
 }

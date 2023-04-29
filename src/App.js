@@ -1,6 +1,6 @@
 import './assets/styles/App.css';
 import NavigationBar from './components/NavigationBar';
-import MarkdownPreviewer from './components/MarkdownPreviewer'
+import MarkdownPreviewer from './components/MarkdownPreviewer';
 
 function App() {
   return (

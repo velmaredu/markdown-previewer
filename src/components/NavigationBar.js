@@ -1,32 +1,33 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import { FaSun, FaMoon } from 'react-icons/fa';
-import { useState } from 'react';
+import { Navbar, Nav } from "react-bootstrap";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleDarkMode } from "../store/reducers/darkModeSlice";
+
 
 function NavigationBar() {
-  const [darkMode, setDarkMode] = useState(false);
+  const darkMode = useSelector((state) => state.darkMode);
+  const dispatch = useDispatch();
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  const handleToggleDarkMode = () => {
+    dispatch(toggleDarkMode());
   };
 
   return (
-    <Navbar bg={darkMode ? 'dark' : 'light'} variant={darkMode ? 'dark' : 'light'} expand="lg">
-      <Container>
-        <Navbar.Brand href="#">Mi aplicación</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#">Inicio</Nav.Link>
-            <Nav.Link href="#">Acerca de</Nav.Link>
-            <Nav.Link href="#">Contacto</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#" onClick={toggleDarkMode}>
-              {darkMode ? <FaSun /> : <FaMoon />}
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar
+      bg={darkMode ? "dark" : "light"}
+      variant={darkMode ? "dark" : "light"}
+      expand="lg"
+      className="navbar px-3"
+    >
+      <Navbar.Toggle aria-controls="navbar-content" />
+      <Navbar.Collapse id="navbar-content" className="justify-content-between">
+        <Navbar.Brand>Markdown Previewer</Navbar.Brand>
+        <Nav>
+          <Nav.Link href="#" onClick={handleToggleDarkMode}>
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
