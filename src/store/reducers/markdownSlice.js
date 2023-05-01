@@ -14,7 +14,8 @@ code
 1. Second member
 
 > Block Quote!
-![Markdown Logo](https://github.com/velmaredu/markdown-previewer/blob/Sass/src/assets/images/Markdown-mark.png)
+
+![Markdown Logo](https://github.com/velmaredu/markdown-previewer/blob/master/src/assets/images/markdown-demo.png)
 `;
 
 const markdownSlice = createSlice({
