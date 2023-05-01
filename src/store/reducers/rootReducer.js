@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import darkModeReducer from './darkModeSlice';
-// Importar otros posibles reducers de la aplicación
+import markDownReducer from './markdownSlice';
 
 const rootReducer = combineReducers({
   darkMode: darkModeReducer,
-  // Agregar otros posibles reducers de la aplicación aquí
+  markdown: markDownReducer,
 });
 
 export default rootReducer;

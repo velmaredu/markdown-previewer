@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+code,
+pre{
+  padding: 1%;
+  color: white;
+  background-color: black !important;
+}
+
+blockquote{
+  text-indent: 1%;
+  border-left: 3px solid black;
+  background-color: white;
+}

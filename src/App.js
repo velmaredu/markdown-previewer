@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <NavigationBar />
-      <MarkdownPreviewer/>
+      <MarkdownPreviewer
+      options={{ breaks: true, gfm: true, pedantic: false}}/>
     </div>
   );
 }
