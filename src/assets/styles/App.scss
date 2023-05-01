@@ -6,7 +6,7 @@
 
   > * {
     color: black;
-  }  
+  }
 }
 
 .dark {
@@ -28,7 +28,16 @@
   flex: 1;
 }
 
-.paper{
+.paper {
   color: black !important;
   background-color: rgb(207, 207, 207) !important;
+}
+
+#preview {
+  box-sizing: border-box;
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
 }

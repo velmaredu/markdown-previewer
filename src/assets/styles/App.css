@@ -27,4 +27,12 @@
 .paper {
   color: black !important;
   background-color: rgb(207, 207, 207) !important;
+}
+
+#preview {
+  box-sizing: border-box;
+}
+#preview img {
+  max-width: 90%;
+  height: auto;
 }/*# sourceMappingURL=App.css.map */

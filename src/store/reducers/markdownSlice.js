@@ -15,7 +15,7 @@ code
 
 > Block Quote!
 
-![Markdown Logo](https://github.com/velmaredu/markdown-previewer/blob/master/src/assets/images/markdown-demo.png)
+![Markdown Logo](src/assets/images/markdown-demo.png)
 `;
 
 const markdownSlice = createSlice({
