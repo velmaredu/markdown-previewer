@@ -2,7 +2,8 @@
   background-color: white;
   color: black;
 }
-.light > * {
+
+.light>* {
   color: black;
 }
 
@@ -10,14 +11,15 @@
   background-color: black;
   color: white;
 }
-.dark > * {
+
+.dark>* {
   color: white;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .MarkdownPreviewer {
@@ -32,7 +34,10 @@
 #preview {
   box-sizing: border-box;
 }
+
 #preview img {
   max-width: 90%;
   height: auto;
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */

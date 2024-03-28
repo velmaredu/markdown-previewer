@@ -7,19 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 code,
-pre{
+pre {
   padding: 1%;
   color: white;
   background-color: black !important;
 }
 
-blockquote{
+blockquote {
   text-indent: 1%;
   border-left: 3px solid black;
   background-color: white;
